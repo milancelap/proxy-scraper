@@ -15,8 +15,8 @@ w.close()
 s3_client = boto3.client(
     's3',
     region_name='us-east-2',
-    aws_access_key_id=ACCESS_KEY,
-    aws_secret_access_key=SECRET_KEY,
+    aws_access_key_id='ACCESS_KEY',
+    aws_secret_access_key='SECRET_KEY',
 )
 
 with open("proxies.txt", "rb") as a:
