@@ -19,7 +19,7 @@ def job():
             subprocess.call(['python', program], shell=False)
             print("Finished:" + program)
 
-schedule.every(5).minutes.at(":00").do(job)
+schedule.every().hour.at(":00").do(job)
 
 while True:
     schedule.run_pending()
