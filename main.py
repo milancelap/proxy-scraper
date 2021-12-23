@@ -9,7 +9,7 @@ def job():
     time.sleep(120)
     os.system("python format.py")
 
-schedule.every().hour.at(":00").do(job)
+schedule.every(5).minutes.at(":00").do(job)
 
 while True:
     schedule.run_pending()
