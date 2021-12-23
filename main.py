@@ -1,7 +1,6 @@
 import os
 import schedule
 import time
-from loguru import logger
 
 def job(self, loop):
     os.system("python proxyScraper.py -p http")
