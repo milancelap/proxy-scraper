@@ -2,7 +2,7 @@ import os
 import schedule
 import time
 
-def job(self, loop):
+def job():
     os.system("python proxyScraper.py -p http")
     time.sleep(60)
     os.system("python proxyChecker.py -s findanyanswer.com -l output.txt")
