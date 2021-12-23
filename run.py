@@ -4,7 +4,7 @@ import time
 
 program_list = ['proxyScraper.py', 'proxyChecker.py', 'format.py']
 param1 = ["-p", "http"]
-param2 = ['-s', 'findanyanswer.com']
+param2 = ['-s', 'google.com']
 param3 = ['-l', 'output.txt']
 
 def job():
