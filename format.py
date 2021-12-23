@@ -23,6 +23,6 @@ s3_client = boto3.client(
 )
 
 with open("proxies.txt", "rb") as a:
-    s3_client.upload_fileobj(a, "moxyproxy", "proxies.txt")
+    s3_client.upload_fileobj(a, "moxyproxy", "proxies.txt", ExtraArgs={'ACL': 'public-read'})
 
         
